@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('../admin/config.php');
-if (!isset($_SESSION['studentdata']['name'])) {
+if (!isset($_SESSION['studentdata']['name1'])) {
     header('Location:login.php');
 }
 
@@ -66,7 +66,7 @@ $result = $conn->query($sql);
     </div><br><br>
 
     <div class="m-auto d-block">
-        <a href="login.php?name=logout" class="btn btn-primary">logout</a>
+        <a href="registration.php?name=logout" class="btn btn-primary">logout</a>
     </div>
     </div>
 

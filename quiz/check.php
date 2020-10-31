@@ -184,7 +184,7 @@ if (isset($_POST['submit2'])) {
         </table>
         <br><br>
         <div class="m-auto d-block">
-        <a href="login.php?name=logout" class="btn btn-primary">logout</a>
+        <a href="registration.php?name=logout" class="btn btn-primary">logout</a>
     </div>
     </div>
 

@@ -1,11 +1,11 @@
 <?php
 session_start();
 include('../admin/config.php');
-if (!isset($_SESSION['studentdata']['name'])) {
-    header('Location:login.php');
+if (!isset($_SESSION['studentdata']['name1'])) {
+    header('Location:registration.php');
 }
 
-$name = $_SESSION['studentdata']['name'];
+$name = $_SESSION['studentdata']['name1'];
 ?>
 <?php include('header.php'); ?>
     <div class="container">
@@ -21,7 +21,7 @@ $name = $_SESSION['studentdata']['name'];
         <a href="quiz2.php" class="btn btn-success">Quiz2</a>
     </div><br><br>
     <div class="m-auto d-block">
-        <a href="login.php?name=logout" class="btn btn-primary">logout</a>
+        <a href="registration.php?name=logout" class="btn btn-primary">logout</a>
     </div>
     </div>
 
